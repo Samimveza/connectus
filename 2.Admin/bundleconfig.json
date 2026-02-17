@@ -1,0 +1,180 @@
+[
+  {
+    "outputFileName": "public/build/bundle-bootstrap.js",
+    "inputFiles": [
+      "scripts/external/vendor/vendor.bundle.base.js"
+    ],
+    "minify": {
+      "enabled": false,
+      "gzip": false
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "public/build/header.js",
+    "inputFiles": [
+      "scripts/external/fontawesome/js/all.min.js",
+      "scripts/external/feather-icons/feather.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "gzip": false
+    },
+    "sourceMap": false
+  },
+
+  {
+    "outputFileName": "public/build/bundle-angular.js",
+    "inputFiles": [
+      "scripts/external/angular/angular.min.js",
+      "scripts/external/angular-cookies/angular-cookies.min.js",
+      "scripts/external/angular-animate/angular-animate.min.js",
+      "scripts/external/angular-touch/angular-touch.min.js",
+      "scripts/external/angular-sanitize/angular-sanitize.min.js",
+      "scripts/external/angular-bootstrap/ui-bootstrap-tpls.min.js",
+      "scripts/external/angular-captcha/angularjs-captcha.min.js",
+      "scripts/external/AngularJS-Toaster/toaster.js",
+      "scripts/external/sweetalert/lib/sweet-alert.min.js",
+      "scripts/external/angular-sweetalert-promised/SweetAlert.min.js",
+      "scripts/external/ngstorage/ngStorage.min.js",
+      "scripts/external/fcsa-number/fcsa-number.js",
+      "scripts/external/angular-ui-select/select.min.js",
+      "scripts/external/angular-recaptcha/angular-recaptcha.min.js",
+      "scripts/external/tinymce/tinymce.min.js",
+      "scripts/external/tinymce/angular-tinymce.min.js",
+      "scripts/external/ng-file-upload/ng-file-upload-all.min.js",
+      "scripts/external/ng-idle/angular-idle.min.js",
+      "scripts/external/ng-map/ng-map.min.js",
+      "scripts/external/locale/angular-locale_fr.min.js",
+      "scripts/external/angular-select2/select.js",
+      "scripts/external/angular-drag-and-drop-lists/angular-drag-and-drop-lists.min.js",
+      "scripts/external/chartjs/chart.js",
+      "scripts/external/qrcodejs/qrcode.min.js",
+
+      "scripts/external/rangy/rangy-core.min.js",
+      "scripts/external/rangy/rangy-selectionsaverestore.min.js",
+
+      "scripts/external/textAngular/textAngular-sanitize.min.js",
+      "scripts/external/textAngular/textAngular.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "gzip": false
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "public/build/bundle-project.js",
+    "inputFiles": [
+      "model/Angular.Model.Common.js",
+      "model/Angular.Model.js",
+      "model/angular-project-model.js",
+
+      "model/static-variable.js",
+      "common/generic-web-connection-service.js",
+      "common/global-variables-factory.js",
+      "common/session-variables.js",
+      "common/variables.js",
+      "common/screen-mode-manager.js",
+      "common/date-conversion.js",
+      "common/screen-mode.js",
+      "common/validation-utility.js",
+      "common/auth-interceptor.js",
+      "common/download-response-service.js",
+      "enum/Angular.Enum.Common.js",
+      "enum/angular-project-enum.js",
+      "return-type/base-return-type.js",
+      "scripts/external/linq/linq.min.js",
+      "base/base-controller.js",
+      "base/base-module.js",
+      "base/base-web-service.js",
+      "shared/common-web-service.js",
+      "shared/common-module.js",
+      "scripts/js/custom.js",
+      "shared/common-controller.js",
+      "shared/image-modal-controller.js",
+      "shared/header-controller.js",
+
+      "area/authentication/authentication-web-service.js",
+      "area/authentication/authentication-module.js",
+      "area/authentication/login-controller.js",
+      "area/authentication/signup-controller.js",
+      "area/authentication/forgot-password-controller.js",
+
+      "area/integration/integration-web-service.js",
+      "area/integration/integration-module.js",
+      "area/integration/integration-list-controller.js",
+      "area/integration/integration-detail-list-controller.js",
+      "area/integration/integration-detail-controller.js",
+      "area/integration/integration-detail-basic-info-controller.js",
+
+      "area/card/card-web-service.js",
+      "area/card/card-module.js",
+      "area/card/card-list-controller.js",
+      "area/card/card-detail-controller.js",
+      "area/card/card-detail-basic-info-controller.js",
+      "area/card/card-detail-information-controller.js",
+      "area/card/card-detail-fields-controller.js",
+      "area/card/card-detail-setting-controller.js",
+      "area/card/card-detail-creation-controller.js",
+
+
+      "area/card/card-detail-other-section-controller.js",
+      "area/card/card-detail-opening-hours-controller.js",
+      "area/card/card-detail-messages-controller.js",
+      "area/card/card-detail-message-modal-controller.js",
+
+      "area/card/card-detail-portfolio-controller.js",
+
+      "area/card/card-detail-education-controller.js",
+      "area/card/card-detail-experience-controller.js",
+
+      "area/shop/shop-web-service.js",
+      "area/shop/shop-module.js",
+      "area/shop/shop-category-list-controller.js",
+      "area/shop/shop-attribute-list-controller.js",
+      "area/shop/shop-product-list-controller.js",
+      "area/shop/shop-product-detail-controller.js",
+      "area/shop/shop-product-detail-attributes-controller.js",
+      "area/shop/shop-product-detail-information-controller.js",
+      "area/shop/shop-product-detail-options-controller.js",
+      "area/shop/shop-product-detail-shipping-controller.js"
+
+
+      //"area/company-card/company-card-web-service.js",
+      //"area/company-card/company-card-module.js",
+      //"area/company-card/company-card-list-controller.js",
+      //"area/company-card/company-card-detail-controller.js",
+      //"area/company-card/company-card-detail-basic-info-controller.js",
+      //"area/company-card/company-card-detail-information-controller.js",
+      //"area/company-card/company-card-detail-fields-controller.js",
+      //"area/company-card/company-card-detail-setting-controller.js",
+      //"area/company-card/company-card-detail-creation-controller.js"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "gzip": false
+    },
+    "sourceMap": false
+  },
+
+  {
+    "outputFileName": "public/build/bundle.css",
+    "inputFiles": [
+      "scripts/external/AngularJS-Toaster/toaster.css",
+      "scripts/external/sweetalert/lib/sweet-alert.min.css",
+      "scripts/external/angular-select2/select.css",
+      "scripts/external/angular-select2/select2.css",
+
+      "scripts/external/textAngular/textAngular.css",
+
+      "scripts/css/custom.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "gzip": false
+    },
+    "sourceMap": false
+  }
+]

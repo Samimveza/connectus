@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Styling</title>
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+</head>
+
+<body>
+    <div id="canvas" style="background:black;"></div>
+    <script type="text/javascript">
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const url = urlParams.get('url')
+        console.log(url);
+        var image = "";
+
+        var options = { "width": 5000, "height": 5000, "data": url, "margin": 25, "qrOptions": { "typeNumber": "0", "mode": "Byte", "errorCorrectionLevel": "H" }, "imageOptions": { "hideBackgroundDots": true, "imageSize": 0.4, "margin": 5 }, "dotsOptions": { "type": "extra-rounded", "color": "#ffffff", "gradient": null }, "backgroundOptions": { "color": "rgba(255, 0, 0, 0)", "gradient": null }, "image": null, "dotsOptionsHelper": { "colorType": { "single": true, "gradient": false }, "gradient": { "linear": true, "radial": false, "color1": "#6a1a4c", "color2": "#6a1a4c", "rotation": "0" } }, "cornersSquareOptions": { "type": "extra-rounded", "color": "#ffffff", "gradient": null }, "cornersSquareOptionsHelper": { "colorType": { "single": true, "gradient": false }, "gradient": { "linear": true, "radial": false, "color1": "#000000", "color2": "#000000", "rotation": "0" } }, "cornersDotOptions": { "type": "", "color": "#ffffff" }, "cornersDotOptionsHelper": { "colorType": { "single": true, "gradient": false }, "gradient": { "linear": true, "radial": false, "color1": "#000000", "color2": "#000000", "rotation": "0" } }, "backgroundOptionsHelper": { "colorType": { "single": true, "gradient": false }, "gradient": { "linear": true, "radial": false, "color1": "#ffffff", "color2": "#ffffff", "rotation": "0" } } }
+
+        const qrCode = new QRCodeStyling(options);
+
+        qrCode.append(document.getElementById("canvas"));
+       qrCode.download({ name: "qr", extension: "png" });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Projects\Card\App\Deployment</_PublishTargetUrl>
+    <History>True|2023-10-23T08:53:27.2572694Z;True|2023-07-23T11:27:46.3082424+04:00;True|2023-07-21T18:27:23.8921550+04:00;True|2023-07-21T18:20:56.0263582+04:00;True|2023-07-20T12:11:19.1622255+04:00;True|2023-07-18T16:13:29.0918355+04:00;True|2023-07-13T12:40:46.9987634+04:00;True|2023-07-10T15:37:44.1290136+04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
