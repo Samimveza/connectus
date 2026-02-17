@@ -52,9 +52,9 @@ switch ($route) {
     case 'in':
 
         if (isset($path_parts[1])) {
-           
+
             $_GET['profileId'] = $path_parts[1];
-          
+
             if (isset($path_parts[2]) && $path_parts[2] === 'portfolio') {
 
                 if (isset($path_parts[3])) {
@@ -64,7 +64,6 @@ switch ($route) {
                     $requiredFile = 'pages/individual-profile-portfolio-list.php';
                 }
             } else {
-               
                 $requiredFile = 'pages/individual-profile.php';
 
             }
@@ -265,9 +264,6 @@ if ($requiredFile) {
     <link type="text/css" rel="stylesheet" href="/css/reset.css">
     <link type="text/css" rel="stylesheet" href="/css/override.css">
     <link type="text/css" rel="stylesheet" href="/css/custom.css">
-    <?php if ($route === 'home'): ?>
-        <link type="text/css" rel="stylesheet" href="/css/landing.css">
-    <?php endif; ?>
     <link type="text/css" rel="stylesheet" href="/public/build/bundle.css">
     <script data-search-pseudo-elements="" defer="" src="/public/build/header.min.js" crossorigin="anonymous"></script>
 
