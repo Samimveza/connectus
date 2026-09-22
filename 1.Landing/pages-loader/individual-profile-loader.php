@@ -22,8 +22,8 @@ $apiEndpoint = SITE_API_ENDPOINT . '/api/structure-detail-by-slug';
 $domain = str_replace(':' . $_SERVER['SERVER_PORT'], '', $_SERVER['HTTP_HOST']);
 
 //LIVE REPLACE
-//$domainHeader = ($domain === 'connectus.mu') ? 'app.connectus.mu' : $domain;
-$domainHeader = ($domain === 'connectus-local.mu') ? 'app.connectus-local.mu' : $domain;
+$domainHeader = ($domain === 'connectus.mu') ? 'app.connectus.mu' : $domain;
+//$domainHeader = ($domain === 'connectus-local.mu') ? 'app.connectus-local.mu' : $domain;
 // Prepare the request data
 $postData = json_encode(['Slug' => $slug]);
 // Set up cURL request

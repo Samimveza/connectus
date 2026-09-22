@@ -52,9 +52,9 @@ switch ($route) {
     case 'in':
 
         if (isset($path_parts[1])) {
-
+           
             $_GET['profileId'] = $path_parts[1];
-
+          
             if (isset($path_parts[2]) && $path_parts[2] === 'portfolio') {
 
                 if (isset($path_parts[3])) {
@@ -64,6 +64,7 @@ switch ($route) {
                     $requiredFile = 'pages/individual-profile-portfolio-list.php';
                 }
             } else {
+               
                 $requiredFile = 'pages/individual-profile.php';
 
             }
