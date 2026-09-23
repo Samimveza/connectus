@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FE79449A-2061-445E-99E9-000809B8FF91}</ProjectGuid>
+    <ProjectGuid>{A5CC5DCC-0032-4EBF-BFB9-4B860BD41CEE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -70,20 +70,20 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="bundleconfig.json" />
+    <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\company.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\in.css" />
+    <Content Include="css\landing.css" />
+    <Content Include="css\override.css" />
+    <Content Include="css\reset.css" />
     <Content Include="index.php" />
     <Content Include="public\build\bundle-angular.js" />
-    <Content Include="public\build\bundle-angular.min.js">
-      <DependentUpon>bundle-angular.js</DependentUpon>
-    </Content>
     <Content Include="public\build\bundle-project.js" />
     <Content Include="public\build\bundle-project.min.js">
       <DependentUpon>bundle-project.js</DependentUpon>
-    </Content>
-    <Content Include="public\build\bundle.css" />
-    <Content Include="public\build\bundle.min.css">
-      <DependentUpon>bundle.css</DependentUpon>
     </Content>
     <Content Include="scripts\external\angular-drag-and-drop-lists\angular-drag-and-drop-lists.min.js" />
     <Content Include="scripts\external\angular-select2\select.css" />
@@ -91,23 +91,15 @@
     <Content Include="scripts\external\angular-select2\select2.css" />
     <Content Include="scripts\external\angular-super-gallery\angular-super-gallery.min.css" />
     <Content Include="scripts\external\angular-super-gallery\angular-super-gallery.min.js" />
-    <Content Include="scripts\external\chartjs\chart.js" />
     <Content Include="scripts\external\locale\angular-locale_fr.min.js" />
     <Content Include="scripts\external\ng-file-upload\ng-file-upload-all.min.js" />
     <Content Include="scripts\external\ng-idle\angular-idle.min.js" />
-    <Content Include="scripts\external\qrcodejs\qrcode.min.js" />
-    <Content Include="scripts\external\rangy\rangy-core.min.js" />
-    <Content Include="scripts\external\rangy\rangy-selectionsaverestore.min.js" />
-    <Content Include="scripts\external\textAngular\textAngular-sanitize.min.js" />
-    <Content Include="scripts\external\textAngular\textAngular.css" />
-    <Content Include="scripts\external\textAngular\textAngular.min.js" />
     <Content Include="scripts\js\swiper-bundle.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="area\company-card\" />
     <Folder Include="assets\fonts\" />
     <Folder Include="assets\images\" />
     <Folder Include="fonts\" />
@@ -222,21 +214,13 @@
   <ItemGroup>
     <TypeScriptCompile Include="area\authentication\authentication-module.ts" />
     <TypeScriptCompile Include="area\authentication\authentication-web-service.ts" />
-    <TypeScriptCompile Include="area\authentication\forgot-password-controller.ts" />
     <TypeScriptCompile Include="area\authentication\login-controller.ts" />
     <TypeScriptCompile Include="area\authentication\signup-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-basic-info-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-creation-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-education-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-experience-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-fields-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-information-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-message-modal-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-messages-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-opening-hours-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-other-section-controller.ts" />
-    <TypeScriptCompile Include="area\card\card-detail-portfolio-controller.ts" />
     <TypeScriptCompile Include="area\card\card-detail-setting-controller.ts" />
     <TypeScriptCompile Include="area\card\card-list-controller.ts" />
     <TypeScriptCompile Include="area\card\card-module.ts" />
@@ -249,17 +233,6 @@
     <TypeScriptCompile Include="area\integration\integration-module.ts" />
     <TypeScriptCompile Include="area\integration\integration-web-service.ts" />
     <TypeScriptCompile Include="area\integration\model\integration-interface.ts" />
-    <TypeScriptCompile Include="area\shop\model\shop-product-interface.ts" />
-    <TypeScriptCompile Include="area\shop\shop-module.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-detail-attributes-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-detail-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-detail-information-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-detail-options-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-detail-shipping-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-product-list-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-web-service.ts" />
-    <TypeScriptCompile Include="area\shop\shop-attribute-list-controller.ts" />
-    <TypeScriptCompile Include="area\shop\shop-category-list-controller.ts" />
     <TypeScriptCompile Include="base\base-controller.ts" />
     <TypeScriptCompile Include="base\base-module.ts" />
     <TypeScriptCompile Include="base\base-web-service.ts" />

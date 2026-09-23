@@ -44,8 +44,6 @@ curl_close($ch);
 // Process the response
 $profileData = null;
 
-
-
 if ($httpCode == 200 && !$error) {
 
 

@@ -24,3 +24,4 @@ var globalVariableFactory = /** @class */ (function () {
     };
     return globalVariableFactory;
 }());
+//# sourceMappingURL=global-variables-factory.js.map
